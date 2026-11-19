@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+}
+
+/* Header */
+header {
+    background-color: #315c3b;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+/* Home */
+.home {
+    background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1500");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 130px 20px;
+}
+
+.home h1 {
+    font-size: 42px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e58e26;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #315c3b;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #315c3b;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #cccccc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Tour Section */
+.tour {
+    background-color: #e9f0e5;
+}
+
+.tour .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Why Choose Us */
+.why {
+    background-color: #f5e8d0;
+}
+
+/* Contact */
+#contact {
+    background-color: #dce8d8;
+}
+
+/* Footer */
+footer {
+    background-color: #315c3b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 85%;
+    }
+}
